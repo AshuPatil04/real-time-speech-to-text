@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS transcripts (id UUID PRIMARY KEY DEFAULT gen_random_uuid(), text TEXT NOT NULL, language TEXT NOT NULL DEFAULT 'auto', duration_seconds INTEGER NOT NULL DEFAULT 0, created_at TIMESTAMPTZ NOT NULL DEFAULT NOW());
